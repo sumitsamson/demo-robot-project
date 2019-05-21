@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 2.9.2 (Jython 2.7.0 on java1.8.0_191)" generated="20190521 14:28:13.480">
+<suite source="E:\Study\Gradle\demo-robot-project\integrationTests\src\test\demo-robot" name="Demo-Robot" id="s1">
+<suite source="E:\Study\Gradle\demo-robot-project\integrationTests\src\test\demo-robot\suite-1.robot" name="Suite-1" id="s1-s1">
+<kw type="setup" name="Startup">
+<kw library="BuiltIn" name="Log">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>*******Start Test "test"*******</arg>
+</arguments>
+<msg level="INFO" timestamp="20190521 14:28:13.768">*******Start Test "test"*******</msg>
+<status endtime="20190521 14:28:13.779" starttime="20190521 14:28:13.766" status="PASS"></status>
+</kw>
+<status endtime="20190521 14:28:13.780" starttime="20190521 14:28:13.763" status="PASS"></status>
+</kw>
+<test name="Valid" id="s1-s1-t1">
+<kw name="test">
+<arguments>
+<arg>${String}</arg>
+</arguments>
+<kw library="BuiltIn" name="Should Not Be Empty">
+<doc>Verifies that the given item is not empty.</doc>
+<arguments>
+<arg>${OK_NOK}</arg>
+</arguments>
+<msg level="INFO" timestamp="20190521 14:28:13.788">Length is 11</msg>
+<status endtime="20190521 14:28:13.790" starttime="20190521 14:28:13.786" status="PASS"></status>
+</kw>
+<status endtime="20190521 14:28:13.791" starttime="20190521 14:28:13.784" status="PASS"></status>
+</kw>
+<status critical="yes" endtime="20190521 14:28:13.792" starttime="20190521 14:28:13.781" status="PASS"></status>
+</test>
+<test name="Invalid" id="s1-s1-t2">
+<kw name="test">
+<arguments>
+<arg>${empty_string}</arg>
+</arguments>
+<kw library="BuiltIn" name="Should Not Be Empty">
+<doc>Verifies that the given item is not empty.</doc>
+<arguments>
+<arg>${OK_NOK}</arg>
+</arguments>
+<msg level="INFO" timestamp="20190521 14:28:13.809">Length is 0</msg>
+<msg level="FAIL" timestamp="20190521 14:28:13.810">'' should not be empty.</msg>
+<status endtime="20190521 14:28:13.811" starttime="20190521 14:28:13.807" status="FAIL"></status>
+</kw>
+<status endtime="20190521 14:28:13.813" starttime="20190521 14:28:13.805" status="FAIL"></status>
+</kw>
+<status critical="yes" endtime="20190521 14:28:13.814" starttime="20190521 14:28:13.794" status="FAIL">'' should not be empty.</status>
+</test>
+<kw type="teardown" name="Teardown">
+<kw library="BuiltIn" name="Log">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>*******End Test "test"*******</arg>
+</arguments>
+<msg level="INFO" timestamp="20190521 14:28:13.821">*******End Test "test"*******</msg>
+<status endtime="20190521 14:28:13.822" starttime="20190521 14:28:13.819" status="PASS"></status>
+</kw>
+<status endtime="20190521 14:28:13.823" starttime="20190521 14:28:13.817" status="PASS"></status>
+</kw>
+<status endtime="20190521 14:28:13.823" starttime="20190521 14:28:13.736" status="FAIL"></status>
+</suite>
+<status endtime="20190521 14:28:13.827" starttime="20190521 14:28:13.489" status="FAIL"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="1">Critical Tests</stat>
+<stat pass="1" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="1" name="Demo-Robot" id="s1">Demo-Robot</stat>
+<stat pass="1" fail="1" name="Suite-1" id="s1-s1">Demo-Robot.Suite-1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
