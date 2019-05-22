@@ -1,7 +1,7 @@
 *** Settings ***
 Suite Setup       Startup
 Suite Teardown    Teardown
-Resource    ../../resources/variables.txt
+Resource    ${RESOURCES}/variables.txt
  
 *** Test Cases ***
 01- Test                  
