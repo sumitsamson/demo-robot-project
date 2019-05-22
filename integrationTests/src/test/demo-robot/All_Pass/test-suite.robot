@@ -42,11 +42,6 @@ Resource    ${RESOURCES}/variables.txt
 	${temp}    Convert To Number    4
 	Should Be Equal    ${result}    ${temp}
 
-08- Run ping command                  
-    ${output}    Run    ping 127.0.0.1 -n 4
-	Should Contain    ${output}    Lost = 0
-	Log To Console    \nOutput: ${output}
-
 	
 *** Keywords ***
 Startup
