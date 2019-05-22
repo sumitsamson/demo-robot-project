@@ -20,6 +20,9 @@ dependencies {
 	//robot dependency
 	robot "org.robotframework:robotframework:2.9.2"
     robot "org.robotframework:javalib-core:1.2.1"
+	robot group: 'com.github.markusbernhardt', name:'robotframework-selenium2library-java', version:'1.4.0.7'
+	robot group: 'org.seleniumhq.selenium', name: 'selenium-chrome-driver', version: '4.0.0-alpha-1'
+
 }
 
 // In this section you declare where to find the dependencies of your project

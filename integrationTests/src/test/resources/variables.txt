@@ -1,0 +1,13 @@
+*** Variables ***
+${string}         sample test
+${empty_string}   ${EMPTY}
+${number}         0b100
+${str1}    abc
+${str2}    1a2C3d
+${price}    $7,999.00
+${string1}    Hello
+${string2}    Robot
+${user}    superuser
+${email}    superuser@ca.com
+${unformatted_string}    To: {} <{}>
+${formatted_string}    To: ${user} <${email}>
